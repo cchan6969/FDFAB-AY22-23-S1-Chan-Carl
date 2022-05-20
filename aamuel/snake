@@ -1,0 +1,32 @@
+'''
+#initialisation
+odd=[]
+
+#input
+num = int(input("Enter a Number: "))
+
+#process
+for num in range (num) :
+    if (num+1) % 2 ==0 :
+        pass
+    else:
+        odd.append(str(num+1))
+
+#output
+print(f"The numbers that are odd are: {','.join(odd)}")
+'''
+#initialisation
+
+factors = []
+
+#input
+n=int(input('Enter a number: '))
+
+#program
+for div in range (n):
+    if  n % (div+1) == 0:
+        factors.append(str(div+1))
+        
+
+#output
+print(f"The factors of {n} are: {',' . join(factors)}")
