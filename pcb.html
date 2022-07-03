@@ -20,6 +20,7 @@
             <p>
             <h2>PCB Manufacturingw</h2>
             <p>
+                "Typically, debugging via the serial monitor and burning the bootloader requires 2 connectors: FTDI and UPDI (like the ICSP connector for the Atmega328 and others) These connectors, however, take up a lot of space on the pcb, especially with respect to the fact that the ATtiny devices, such as the ATtiny3217, are very small. That is why a combined FTDI / UPDI connector would help take less space on the pcb." -<a href="https://github.com/avandalen/FDTI-UPDI-connector">Sauce</a>
                 For the first two board, we made a FTDI to UPDI programmer.<br>
                 <br>
                 <img src="png/FTDI example 1.png" width="45%">
@@ -31,7 +32,7 @@
                 <img src="png/updi example pins.jpg" width="45%">
                 UPDI example<br>
                 <br>
-                Using the png files provided, we loaded it into mods to obtain a Gcode file.<br>
+                Using the png files provided, we loaded it into <a href="https://skeatz.github.io/mods/">mods</a> to obtain a Gcode file.<br>
                 <img src="png/Mods.png" width="45%">
                 Open mods and right click : menu/ programs/ open server program/ mill 2D png.<br>
                 Then, "select PNG file on the left"<br>
@@ -40,7 +41,12 @@
                 After that, we uploaded the gcode file into the computer on the CNC Router.<br>
                 <img src="png/ftdi cutting 1.jpg" width="45%"><br>
                 <img src="png/ftdi cutting 2.jpg" width="45%"><br>
-                Then, we set the X and Y coordinate to 0 on our prefered start location, and set the Z to 0 using the "Zeroing Tappy Tappy" (a micro switch with a zeroing sensor).
+                Then, we set the X and Y coordinate to 0 on our prefered start location, and set the Z to 0 using the "Zeroing Tappy Tappy" (a micro switch with a zeroing sensor).<br>
+                During the routing process, the adjustment of the Z axis is favourable when it is undercutting or overcutting, so increasing or decresing the Z offset will yield better cuts.<br>
+                <img src="png/ftdi.jpg" width="45%"><br>
+                Final product of the ftdi
+                <img src="png/updi+ftdi.jpg" width="45%"><br>
+                Final UPDI + FTDI 
             </p>
             <hr>
             <p>
@@ -58,7 +64,11 @@
             <p>
                 <img src="png/ice cream fuji.png" width="70%"><br>
                 <img src="png/fuji.jpg" width="45%"><br>
-                "if the solder is applied properly, it should like Mt Fuji type, rather than Ice Cream" 
+                "If the solder is applied properly, it should like Mt Fuji type, rather than Ice Cream"<br>
+                For the soldering, my 'Hello Board' had connectivity issues with the Arduino application. After troubleshooting done by Mr Stevens, the board was found to have its chip and LED shorted, thus rendering those component broken.
+                I have opted to do most of the soldering at home, which yield few issues.
+                Firstly, my soldering iron tip was hotswapable, and I have opted to use a fat pointed tip iron head, which could not properlly apply the solder between pins. This resulted in many messy residue which may have resulted in the shorting of the chip.
+
             </p>
         </div>
     </body>   
