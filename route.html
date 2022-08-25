@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en-SG">
+    <head>
+	    <link rel="stylesheet" href="awsm_theme_big-stone.css">
+	    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 class = "header">Carl's Website</h2>
+        <nav>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Home</a> </li> <br>
+                <li><a href="agree.html">Agreement</a> </li> <br>
+                <li><a href="pcb.html">PCB</a> </li> <br>
+                <li><a href="cnc.html">Large CNC</a> </li> <br>
+                <li><a href="route.html">Large CNC</a> </li> <br>
+            </ul>
+            
+        </nav>
+        <div><!--article-->
+            <p>
+            <h2>PCB Manufacturing</h2><br>
+            <br>
+            <h3>Making of Hello Board</h3>
+            <p>
+                SnapEDA is a site where we can get the schematics of our component, namely the chip, and import it into Eagles for wiring.
+                <img src="png/snapEDA.png" width="45%"><br>
+                <img src="png/eagle.png" width="45%"><br>
+                This Fusion 360 Eagle, the software we used to design and wire the circuit and map out the schmetics. <br>
+                <img src="png/hello electric.png" width="45%"><br>
+                This is the schmatics of the hello board made.<br>
+                It has a LED (Light Emitting Diode) and a DPDT push button, controlled by an ATtiny 412 Microcontroller.<br>
+                After that, I have used the auto route function to route the wiring and rearrange manually to achive 100% wiring.<br>
+                <img src="png/hello bord auto.png" width="45%"><br>
+                Then, the Png file is generated and I put it in mods, to generate the Gcode use for routing.
+                <img src="png/bord.png" width="45%"><br>
+                <img src="png/outinline.png" width="45%"><br>
+                <a href="hello bord.sch">Hello Board Schematics</a><br>
+                <a href="hello bord.brd">Hello Board Board diragram</a><br>
+                <a href="nc/bord.png.nc">Hello Board NC</a><br>
+                <a href="nc/outinline.png.nc">Hello Board Outline NC</a><br>
+            </p>
+            <hr>
+            <h3>Soldering</h3>
+            <p>
+                "If the solder is applied properly, it should like Mt Fuji type, rather than Ice Cream"<br>
+                <br>
+                <img src="png/ice cream fuji.png" width="70%"><br>
+                <img src="png/fuji.jpg" width="45%" title="https://en.wikipedia.org/wiki/Mount_Fuji"><br>
+                <img src="png/ice cream.jpg" width="45%" title="https://www.thespruceeats.com/what-is-ice-cream-1328784"><br>
+                For the soldering, my 'Hello Board' had connectivity issues with the Arduino application. <br>
+                I have counted wrongly the pins and cut the pins wrongly, so I had tried to use super glue to align the missing pin to the other pins and then solder on the extra pin to the unused connector. Eventually I had decided that it is not connected to anything so I have dropped it.<br>
+                <img src="png/hello pin rip.jpg" width="45%"><br> 
+                After troubleshooting done by Mr Stevens, the board was found to have its chip and LED shorted, thus rendering those component broken.
+                I have opted to do most of the soldering at home, which yield few issues.
+                Firstly, my soldering iron tip was hotswapable, and I have opted to use a fat pointed tip iron head, which could not properlly apply the solder between pins. This resulted in many messy residue which may have resulted in the shorting of the chip.<br>
+                <img src="png/Hello wrong.png" width="45%"><br>
+                The solder may have travel across the lanes.<br>
+                <br>
+                Next, the temperature on my soldering iron was too high, thus prolong contact with the chip causes the component to attempt to melt.
+                For future boards, I might attempt to use a soldering liquid (approx: 138 celcius) which melts at a lower temperature and a heat gun 
+
+            </p>
+            <hr>
+            <h3>Final Product</h3>
+            <p>
+                Final programmer with Hello Board<br>
+                <img src="png/Programmer.jpg" width="45%"><br>
+                Placeholder Video for the working board with embeded programming<br>
+                <a href="https://youtu.be/djV11Xbc914">Video</a><br>
+                <hr>
+                // ATtiny412
+                // PB - 0
+                // LED - 1
+
+                #define pb 0
+                #define led 1
+                const int dlyTime = 500;
+                void setup() 
+                {
+                
+                    pinMode(led, OUTPUT);
+                }
+                void loop() 
+                {
+                
+                    if(digitalRead(pb) == LOW)
+                    {
+                        delay(dlyTime);
+                        digitalWrite(led, LOW);
+                        delay(dlyTime);
+                        digitalWrite(led, HIGH);
+                    }
+                else
+                {
+                    digitalWrite(led, HIGH);
+                }
+            }
+
+
+
+
+                <hr>
+                // Code for sensing a switch status and writing the value to the serial port
+
+                int switchPin = 4;  // Switch connected to pin 4
+                #define pb 0
+                #define led 1
+                const int dlyTime = 500;
+
+                void setup() 
+                {
+                    Serial.swap(1);
+                    pinMode(switchPin, INPUT);  // Set pin 0 as an input
+                    pinMode(led, OUTPUT);
+                    Serial.begin(9600);         // Start serial communication at 9600 bps
+                }
+
+                void loop() 
+                {
+                    if (digitalRead(switchPin) == HIGH) 
+                    {  // If switch is ON,
+                        digitalWrite(led, LOW);
+                        Serial.write(1);                     // send 1 to Processin
+                        delay(dlyTime);
+                        digitalWrite(led, HIGH);
+                        delay(dlyTime);
+                    } 
+                    else 
+                    {                               // If the switch is not ON,
+                        Serial.write(0);                     // send 0 to Processing
+                        digitalWrite(led, HIGH);
+                    }
+                    delay(100);                            // Wait 100 milliseconds
+                }
+            </p>
+        </div>
+    </body>   
+</html> 
