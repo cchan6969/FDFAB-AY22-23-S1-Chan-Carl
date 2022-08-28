@@ -24,9 +24,10 @@
         </nav>
         <div><!--article-->
             <p>
-            <h2>PCB Manufacturing</h2><br>
-            <br>
-            <h3>Making of Hello Board</h3>
+                <h2>PCB Manufacturing</h2><br>
+                <br>
+                <h3>Making of Hello Board</h3>
+            </p>
             <p>
                 We would be designing and fabricating a hello board to be used to show case our FTDI and UPDI boards.<br>
                 This board consist of a LED light and a button, which both are programnmable.<br>
@@ -76,69 +77,73 @@
                 Placeholder Video for the working board with embeded programming<br>
                 <a href="https://youtu.be/djV11Xbc914">Video</a><br>
                 <hr>
-                <code>
-                    // ATtiny412
-                    // PB - 0
-                    // LED - 1
+                <pre>
+                    <code>
+                        // ATtiny412
+                        // PB - 0
+                        // LED - 1
 
-                    #define pb 0
-                    #define led 1
-                    const int dlyTime = 500;
-                    void setup() 
-                    {
-                       pinMode(led, OUTPUT);
-                    }
-                    void loop() 
-                    {
-                    
-                        if(digitalRead(pb) == LOW)
+                        #define pb 0
+                        #define led 1
+                        const int dlyTime = 500;
+                        void setup() 
                         {
-                            delay(dlyTime);
-                            digitalWrite(led, LOW);
-                            delay(dlyTime);
-                            digitalWrite(led, HIGH);
-                        }
-                        else
-                        {
-                            digitalWrite(led, HIGH);
-                        }
-                    }
-                </code>
-                <hr>
-                <code>
-                    // Code for sensing a switch status and writing the value to the serial port
-
-                    int switchPin = 4;  // Switch connected to pin 4
-                    #define pb 0
-                    #define led 1
-                    const int dlyTime = 500;
-
-                    void setup() 
-                    {
-                        Serial.swap(1);
-                        pinMode(switchPin, INPUT);  // Set pin 0 as an input
                         pinMode(led, OUTPUT);
-                        Serial.begin(9600);         // Start serial communication at 9600 bps
-                    }
-
-                    void loop() 
-                    {
-                        if (digitalRead(switchPin) == HIGH) 
-                        {  // If switch is ON,
-                            digitalWrite(led, LOW);
-                            Serial.write(1);                     // send 1 to Processin
-                            delay(dlyTime);
-                            digitalWrite(led, HIGH);
-                            delay(dlyTime);
-                        } 
-                        else 
-                        {                               // If the switch is not ON,
-                            Serial.write(0);                     // send 0 to Processing
-                            digitalWrite(led, HIGH);
                         }
-                        delay(100);                            // Wait 100 milliseconds
-                    }
-                </code>
+                        void loop() 
+                        {
+                        
+                            if(digitalRead(pb) == LOW)
+                            {
+                                delay(dlyTime);
+                                digitalWrite(led, LOW);
+                                delay(dlyTime);
+                                digitalWrite(led, HIGH);
+                            }
+                            else
+                            {
+                                digitalWrite(led, HIGH);
+                            }
+                        }
+                    </code>
+                </pre>
+                <hr>
+                <pre>
+                    <code>
+                        // Code for sensing a switch status and writing the value to the serial port
+
+                        int switchPin = 4;  // Switch connected to pin 4
+                        #define pb 0
+                        #define led 1
+                        const int dlyTime = 500;
+
+                        void setup() 
+                        {
+                            Serial.swap(1);
+                            pinMode(switchPin, INPUT);  // Set pin 0 as an input
+                            pinMode(led, OUTPUT);
+                            Serial.begin(9600);         // Start serial communication at 9600 bps
+                        }
+
+                        void loop() 
+                        {
+                            if (digitalRead(switchPin) == HIGH) 
+                            {  // If switch is ON,
+                                digitalWrite(led, LOW);
+                                Serial.write(1);                     // send 1 to Processin
+                                delay(dlyTime);
+                                digitalWrite(led, HIGH);
+                                delay(dlyTime);
+                            } 
+                            else 
+                            {                               // If the switch is not ON,
+                                Serial.write(0);                     // send 0 to Processing
+                                digitalWrite(led, HIGH);
+                            }
+                            delay(100);                            // Wait 100 milliseconds
+                        }
+                    </code>
+                </pre>
             </p>
         </div>
     </body>   
