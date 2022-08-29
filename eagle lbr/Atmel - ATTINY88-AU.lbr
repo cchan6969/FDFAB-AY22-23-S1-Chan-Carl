@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="4" number="39" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="4" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="0" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="0" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="MICROCHIP_-_ATMEL_ATTINY88-AU_0">
+                    <description>MC-8B-ATT48-SQ32</description>
+                    <wire layer="21" y2="3.05" width="0.15" x2="-3.05" y1="-3.05" x1="-3.05"/>
+                    <wire layer="21" y2="3.05" width="0.15" x2="3.05" y1="-3.05" x1="3.05"/>
+                    <wire layer="21" y2="3.05" width="0.15" x2="3.05" y1="3.05" x1="-3.05"/>
+                    <wire layer="21" y2="-3.05" width="0.15" x2="3.05" y1="-3.05" x1="-3.05"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="-3.5" y1="-3.5" x1="-3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="3.5" y1="-3.5" x1="3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="3.5" y1="3.5" x1="-3.5"/>
+                    <wire layer="51" y2="-3.5" width="0.1" x2="3.5" y1="-3.5" x1="-3.5"/>
+                    <wire layer="39" y2="4.9" width="0.1" x2="-4.9" y1="-4.9" x1="-4.9"/>
+                    <wire layer="39" y2="4.9" width="0.1" x2="4.9" y1="4.9" x1="-4.9"/>
+                    <wire layer="39" y2="-4.9" width="0.1" x2="4.9" y1="4.9" x1="4.9"/>
+                    <wire layer="39" y2="-4.9" width="0.1" x2="-4.9" y1="-4.9" x1="4.9"/>
+                    <text layer="25" align="bottom-left" y="4.9" x="-5.9" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="3.625" x="-4.15" layer="21" radius="0.125" width="0.25"/>
+                    <circle y="2.05" x="-2.05" layer="21" radius="0.3" width="0.6"/>
+                    <circle y="2.6" x="-2.6" layer="51" radius="0.5" width="0.1"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.55" dy="1.35" y="2.8" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.55" dy="1.35" y="2.0" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.55" dy="1.35" y="1.2" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.55" dy="1.35" y="0.4" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-0.4" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-1.2" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-2.0" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-2.8" x="-4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="-2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-4.15" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-2.8" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-2.0" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-1.2" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.55" dy="1.35" y="-0.4" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.55" dy="1.35" y="0.4" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.55" dy="1.35" y="1.2" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.55" dy="1.35" y="2.0" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.55" dy="1.35" y="2.8" x="4.15" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.55" dy="1.35" y="4.15" x="-2.8" rot="R0" cream="yes"/>
+                </package>
+                <package name="MICROCHIP_-_ATMEL_ATTINY88-AU_1">
+                    <description>MC-8B-ATT48-SQ32</description>
+                    <wire layer="21" y2="-2.95" width="0.15" x2="2.95" y1="-2.95" x1="-2.95"/>
+                    <wire layer="21" y2="2.95" width="0.15" x2="2.95" y1="2.95" x1="-2.95"/>
+                    <wire layer="21" y2="2.95" width="0.15" x2="2.95" y1="-2.95" x1="2.95"/>
+                    <wire layer="21" y2="2.95" width="0.15" x2="-2.95" y1="-2.95" x1="-2.95"/>
+                    <wire layer="51" y2="-3.5" width="0.1" x2="3.5" y1="-3.5" x1="-3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="3.5" y1="3.5" x1="-3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="3.5" y1="-3.5" x1="3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="-3.5" y1="-3.5" x1="-3.5"/>
+                    <wire layer="39" y2="5.25" width="0.1" x2="-5.25" y1="-5.25" x1="-5.25"/>
+                    <wire layer="39" y2="5.25" width="0.1" x2="5.25" y1="5.25" x1="-5.25"/>
+                    <wire layer="39" y2="-5.25" width="0.1" x2="5.25" y1="5.25" x1="5.25"/>
+                    <wire layer="39" y2="-5.25" width="0.1" x2="-5.25" y1="-5.25" x1="5.25"/>
+                    <text layer="25" align="bottom-left" y="5.25" x="-6.25" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.95" x="-1.95" layer="21" radius="0.3" width="0.6"/>
+                    <circle y="3.625" x="-4.2" layer="21" radius="0.125" width="0.25"/>
+                    <circle y="2.6" x="-2.6" layer="51" radius="0.5" width="0.1"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="-2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.55" dy="1.65" y="4.2" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.55" dy="1.65" y="2.8" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.55" dy="1.65" y="2.0" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.55" dy="1.65" y="1.2" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.55" dy="1.65" y="0.4" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-0.4" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-1.2" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-2.0" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-2.8" x="4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-4.2" x="-2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-2.8" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-2.0" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-1.2" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.55" dy="1.65" y="-0.4" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.55" dy="1.65" y="0.4" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.55" dy="1.65" y="1.2" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.55" dy="1.65" y="2.0" x="-4.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.55" dy="1.65" y="2.8" x="-4.2" rot="R90" cream="yes"/>
+                </package>
+                <package name="MICROCHIP_-_ATMEL_ATTINY88-AU_2">
+                    <description>MC-8B-ATT48-SQ32</description>
+                    <wire layer="21" y2="2.85" width="0.15" x2="-2.85" y1="-2.85" x1="-2.85"/>
+                    <wire layer="21" y2="2.85" width="0.15" x2="2.85" y1="-2.85" x1="2.85"/>
+                    <wire layer="21" y2="2.85" width="0.15" x2="2.85" y1="2.85" x1="-2.85"/>
+                    <wire layer="21" y2="-2.85" width="0.15" x2="2.85" y1="-2.85" x1="-2.85"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="-3.5" y1="-3.5" x1="-3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="3.5" y1="-3.5" x1="3.5"/>
+                    <wire layer="51" y2="3.5" width="0.1" x2="3.5" y1="3.5" x1="-3.5"/>
+                    <wire layer="51" y2="-3.5" width="0.1" x2="3.5" y1="-3.5" x1="-3.5"/>
+                    <wire layer="39" y2="5.7" width="0.1" x2="-5.7" y1="-5.7" x1="-5.7"/>
+                    <wire layer="39" y2="5.7" width="0.1" x2="5.7" y1="5.7" x1="-5.7"/>
+                    <wire layer="39" y2="-5.7" width="0.1" x2="5.7" y1="5.7" x1="5.7"/>
+                    <wire layer="39" y2="-5.7" width="0.1" x2="-5.7" y1="-5.7" x1="5.7"/>
+                    <text layer="25" align="bottom-left" y="5.7" x="-6.7" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="3.65" x="-4.25" layer="21" radius="0.125" width="0.25"/>
+                    <circle y="1.85" x="-1.85" layer="21" radius="0.3" width="0.6"/>
+                    <circle y="2.6" x="-2.6" layer="51" radius="0.5" width="0.1"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.6" dy="1.95" y="2.8" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.6" dy="1.95" y="2.0" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.6" dy="1.95" y="1.2" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.6" dy="1.95" y="0.4" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-0.4" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-1.2" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-2.0" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-2.8" x="-4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="-2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-4.25" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-2.8" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-2.0" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-1.2" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.6" dy="1.95" y="-0.4" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.6" dy="1.95" y="0.4" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.6" dy="1.95" y="1.2" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.6" dy="1.95" y="2.0" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.6" dy="1.95" y="2.8" x="4.25" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.6" dy="1.95" y="4.25" x="-2.8" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="MICROCHIP_-_ATMEL_ATTINY88-AU_0_0">
+                    <description>MC-8B-ATT48-SQ32</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-58.42" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="53.34" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-58.42" width="0.508" x2="53.34" y1="-5.08" x1="53.34"/>
+                    <wire layer="94" y2="-58.42" width="0.508" x2="0.0" y1="-58.42" x1="53.34"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="53.34" y1="-25.4" x1="53.34"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="53.34" y1="-22.86" x1="53.34"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="53.34" y1="-20.32" x1="53.34"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="53.34" y1="-15.24" x1="53.34"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="53.34" y1="-17.78" x1="53.34"/>
+                    <wire layer="94" y2="-55.88" width="0.15" x2="53.34" y1="-55.88" x1="53.34"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="53.34" y1="-35.56" x1="53.34"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="0.0" y1="-22.86" x1="0.0"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="0.0" y1="-25.4" x1="0.0"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="53.34" y1="-12.7" x1="53.34"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="53.34" y1="-10.16" x1="53.34"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="53.34" y1="-7.62" x1="53.34"/>
+                    <wire layer="94" y2="-45.72" width="0.15" x2="0.0" y1="-45.72" x1="0.0"/>
+                    <wire layer="94" y2="-43.18" width="0.15" x2="0.0" y1="-43.18" x1="0.0"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="0.0" y1="-40.64" x1="0.0"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="0.0" y1="-38.1" x1="0.0"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="0.0" y1="-35.56" x1="0.0"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="0.0" y1="-20.32" x1="0.0"/>
+                    <wire layer="94" y2="-53.34" width="0.15" x2="53.34" y1="-53.34" x1="53.34"/>
+                    <wire layer="94" y2="-48.26" width="0.15" x2="0.0" y1="-48.26" x1="0.0"/>
+                    <wire layer="94" y2="-55.88" width="0.15" x2="0.0" y1="-55.88" x1="0.0"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="0.0" y1="-30.48" x1="0.0"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="0.0" y1="-33.02" x1="0.0"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="0.0" y1="-15.24" x1="0.0"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="0.0" y1="-12.7" x1="0.0"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
+                    <wire layer="94" y2="-53.34" width="0.15" x2="0.0" y1="-53.34" x1="0.0"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="53.34" y1="-38.1" x1="53.34"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="53.34" y1="-30.48" x1="53.34"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="53.34" y1="-33.02" x1="53.34"/>
+                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-63.5" x="0.0" rot="R0" size="2.54">ATTINY88-AU</text>
+                    <pin direction="io" name="!PB0!(PCINT0/CLKO/ICP1)" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                    <pin direction="io" name="!PD7!(PCINT23/AIN1)" visible="both" length="middle" y="-25.4" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PD6!(PCINT22/AIN0)" visible="both" length="middle" y="-22.86" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PD5!(PCINT21/T1)" visible="both" length="middle" y="-20.32" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PD3!(PCINT19/INT1)" visible="both" length="middle" y="-15.24" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PD4!(PCINT20/T0)" visible="both" length="middle" y="-17.78" x="58.42" rot="R180"/>
+                    <pin direction="pwr" name="VCC" visible="both" length="middle" y="-55.88" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PA2!(PCINT26)" visible="both" length="middle" y="-35.56" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PB6!(PCINT6/CLKI)" visible="both" length="middle" y="-22.86" x="-5.08"/>
+                    <pin direction="io" name="!PB7!(PCINT7)" visible="both" length="middle" y="-25.4" x="-5.08"/>
+                    <pin direction="io" name="!PD2!(INT0/PCINT18)" visible="both" length="middle" y="-12.7" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PD1!(PCINT17)" visible="both" length="middle" y="-10.16" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PD0!(PCINT16)" visible="both" length="middle" y="-7.62" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!RESET!/PCINT14)" visible="both" length="middle" y="-45.72" x="-5.08"/>
+                    <pin direction="io" name="!PC5!(ADC5/SCL/PCINT13)" visible="both" length="middle" y="-43.18" x="-5.08"/>
+                    <pin direction="io" name="!PC4!(ADC4/SDA/PCINT12)" visible="both" length="middle" y="-40.64" x="-5.08"/>
+                    <pin direction="io" name="!PC3!(ADC3/PCINT11)" visible="both" length="middle" y="-38.1" x="-5.08"/>
+                    <pin direction="io" name="!PC2!(ADC2/PCINT10)" visible="both" length="middle" y="-35.56" x="-5.08"/>
+                    <pin direction="io" name="!PB5!(SCK/PCINT5)" visible="both" length="middle" y="-20.32" x="-5.08"/>
+                    <pin direction="pwr" name="AVCC" visible="both" length="middle" y="-53.34" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PC7!(PCINT15)" visible="both" length="middle" y="-48.26" x="-5.08"/>
+                    <pin direction="pwr" name="1_GND" visible="both" length="middle" y="-55.88" x="-5.08"/>
+                    <pin direction="io" name="!PC0!(ADC0/PCINT8)" visible="both" length="middle" y="-30.48" x="-5.08"/>
+                    <pin direction="io" name="!PC1!(ADC1/PCINT9)" visible="both" length="middle" y="-33.02" x="-5.08"/>
+                    <pin direction="io" name="!PB4!(PCINT4/MISO)" visible="both" length="middle" y="-17.78" x="-5.08"/>
+                    <pin direction="io" name="!PB3!(PCINT3/MOSI)" visible="both" length="middle" y="-15.24" x="-5.08"/>
+                    <pin direction="io" name="!SS!/OC1B)" visible="both" length="middle" y="-12.7" x="-5.08"/>
+                    <pin direction="io" name="!PB1!(PCINT1/OC1A)" visible="both" length="middle" y="-10.16" x="-5.08"/>
+                    <pin direction="pwr" name="2_GND" visible="both" length="middle" y="-53.34" x="-5.08"/>
+                    <pin direction="io" name="!PA3!(PCINT27)" visible="both" length="middle" y="-38.1" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PA0!(ADC6/PCINT24)" visible="both" length="middle" y="-30.48" x="58.42" rot="R180"/>
+                    <pin direction="io" name="!PA1!(ADC7/PCINT25)" visible="both" length="middle" y="-33.02" x="58.42" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="MICROCHIP_-_ATMEL_ATTINY88-AU">
+                    <description>MC-8B-ATT48-SQ32</description>
+                    <gates>
+                        <gate name="G$0" symbol="MICROCHIP_-_ATMEL_ATTINY88-AU_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="MICROCHIP_-_ATMEL_ATTINY88-AU_0_0" package="MICROCHIP_-_ATMEL_ATTINY88-AU_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="!PD3!(PCINT19/INT1)"/>
+                                <connect gate="G$0" pad="10" pin="!PD6!(PCINT22/AIN0)"/>
+                                <connect gate="G$0" pad="11" pin="!PD7!(PCINT23/AIN1)"/>
+                                <connect gate="G$0" pad="12" pin="!PB0!(PCINT0/CLKO/ICP1)"/>
+                                <connect gate="G$0" pad="13" pin="!PB1!(PCINT1/OC1A)"/>
+                                <connect gate="G$0" pad="14" pin="!SS!/OC1B)"/>
+                                <connect gate="G$0" pad="15" pin="!PB3!(PCINT3/MOSI)"/>
+                                <connect gate="G$0" pad="16" pin="!PB4!(PCINT4/MISO)"/>
+                                <connect gate="G$0" pad="17" pin="!PB5!(SCK/PCINT5)"/>
+                                <connect gate="G$0" pad="18" pin="AVCC"/>
+                                <connect gate="G$0" pad="19" pin="!PA0!(ADC6/PCINT24)"/>
+                                <connect gate="G$0" pad="2" pin="!PD4!(PCINT20/T0)"/>
+                                <connect gate="G$0" pad="20" pin="!PC7!(PCINT15)"/>
+                                <connect gate="G$0" pad="21" pin="1_GND"/>
+                                <connect gate="G$0" pad="22" pin="!PA1!(ADC7/PCINT25)"/>
+                                <connect gate="G$0" pad="23" pin="!PC0!(ADC0/PCINT8)"/>
+                                <connect gate="G$0" pad="24" pin="!PC1!(ADC1/PCINT9)"/>
+                                <connect gate="G$0" pad="25" pin="!PC2!(ADC2/PCINT10)"/>
+                                <connect gate="G$0" pad="26" pin="!PC3!(ADC3/PCINT11)"/>
+                                <connect gate="G$0" pad="27" pin="!PC4!(ADC4/SDA/PCINT12)"/>
+                                <connect gate="G$0" pad="28" pin="!PC5!(ADC5/SCL/PCINT13)"/>
+                                <connect gate="G$0" pad="29" pin="!RESET!/PCINT14)"/>
+                                <connect gate="G$0" pad="3" pin="!PA2!(PCINT26)"/>
+                                <connect gate="G$0" pad="30" pin="!PD0!(PCINT16)"/>
+                                <connect gate="G$0" pad="31" pin="!PD1!(PCINT17)"/>
+                                <connect gate="G$0" pad="32" pin="!PD2!(INT0/PCINT18)"/>
+                                <connect gate="G$0" pad="4" pin="VCC"/>
+                                <connect gate="G$0" pad="5" pin="2_GND"/>
+                                <connect gate="G$0" pad="6" pin="!PA3!(PCINT27)"/>
+                                <connect gate="G$0" pad="7" pin="!PB6!(PCINT6/CLKI)"/>
+                                <connect gate="G$0" pad="8" pin="!PB7!(PCINT7)"/>
+                                <connect gate="G$0" pad="9" pin="!PD5!(PCINT21/T1)"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Component_Link_2_Description" value="ATtiny48/88 Datasheet"/>
+                                    <attribute name="ciiva_ids" value="1155400"/>
+                                    <attribute name="Component_Link_2_URL" value="http://www.atmel.com/dyn/resources/prod_documents/doc8008.pdf"/>
+                                    <attribute name="Package_Version" value="revC, Oct-2010"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="2DDE0CE0-C8F3-4319-BD7A-FB53AA627F1B"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.atmel.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="vault_revision" value="4BE95B8B-E1EF-4025-9FFB-95CA84512F43"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521843945"/>
+                                    <attribute name="Datasheet_Version" value="revC, Mar-2009"/>
+                                    <attribute name="release_date" value="1329220623"/>
+                                    <attribute name="Code__JEDEC" value="MS-026-ABA"/>
+                                    <attribute name="MPN" value="ATTINY88-AU"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="32-Lead, 7x7x1.0 mm Body, 0.8mm Lead Pitch, Thin Profile Plastic Quad Flat Package (TQFP)"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="ATtiny48/88 Summary"/>
+                                    <attribute name="MF" value="Microchip / Atmel"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="package" value="32A"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.atmel.com/dyn/resources/prod_documents/8008S.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="MICROCHIP_-_ATMEL_ATTINY88-AU_0_1" package="MICROCHIP_-_ATMEL_ATTINY88-AU_1">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="!PD3!(PCINT19/INT1)"/>
+                                <connect gate="G$0" pad="10" pin="!PD6!(PCINT22/AIN0)"/>
+                                <connect gate="G$0" pad="11" pin="!PD7!(PCINT23/AIN1)"/>
+                                <connect gate="G$0" pad="12" pin="!PB0!(PCINT0/CLKO/ICP1)"/>
+                                <connect gate="G$0" pad="13" pin="!PB1!(PCINT1/OC1A)"/>
+                                <connect gate="G$0" pad="14" pin="!SS!/OC1B)"/>
+                                <connect gate="G$0" pad="15" pin="!PB3!(PCINT3/MOSI)"/>
+                                <connect gate="G$0" pad="16" pin="!PB4!(PCINT4/MISO)"/>
+                                <connect gate="G$0" pad="17" pin="!PB5!(SCK/PCINT5)"/>
+                                <connect gate="G$0" pad="18" pin="AVCC"/>
+                                <connect gate="G$0" pad="19" pin="!PA0!(ADC6/PCINT24)"/>
+                                <connect gate="G$0" pad="2" pin="!PD4!(PCINT20/T0)"/>
+                                <connect gate="G$0" pad="20" pin="!PC7!(PCINT15)"/>
+                                <connect gate="G$0" pad="21" pin="1_GND"/>
+                                <connect gate="G$0" pad="22" pin="!PA1!(ADC7/PCINT25)"/>
+                                <connect gate="G$0" pad="23" pin="!PC0!(ADC0/PCINT8)"/>
+                                <connect gate="G$0" pad="24" pin="!PC1!(ADC1/PCINT9)"/>
+                                <connect gate="G$0" pad="25" pin="!PC2!(ADC2/PCINT10)"/>
+                                <connect gate="G$0" pad="26" pin="!PC3!(ADC3/PCINT11)"/>
+                                <connect gate="G$0" pad="27" pin="!PC4!(ADC4/SDA/PCINT12)"/>
+                                <connect gate="G$0" pad="28" pin="!PC5!(ADC5/SCL/PCINT13)"/>
+                                <connect gate="G$0" pad="29" pin="!RESET!/PCINT14)"/>
+                                <connect gate="G$0" pad="3" pin="!PA2!(PCINT26)"/>
+                                <connect gate="G$0" pad="30" pin="!PD0!(PCINT16)"/>
+                                <connect gate="G$0" pad="31" pin="!PD1!(PCINT17)"/>
+                                <connect gate="G$0" pad="32" pin="!PD2!(INT0/PCINT18)"/>
+                                <connect gate="G$0" pad="4" pin="VCC"/>
+                                <connect gate="G$0" pad="5" pin="2_GND"/>
+                                <connect gate="G$0" pad="6" pin="!PA3!(PCINT27)"/>
+                                <connect gate="G$0" pad="7" pin="!PB6!(PCINT6/CLKI)"/>
+                                <connect gate="G$0" pad="8" pin="!PB7!(PCINT7)"/>
+                                <connect gate="G$0" pad="9" pin="!PD5!(PCINT21/T1)"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Component_Link_2_Description" value="ATtiny48/88 Datasheet"/>
+                                    <attribute name="ciiva_ids" value="1155400"/>
+                                    <attribute name="Component_Link_2_URL" value="http://www.atmel.com/dyn/resources/prod_documents/doc8008.pdf"/>
+                                    <attribute name="Package_Version" value="revC, Oct-2010"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="2DDE0CE0-C8F3-4319-BD7A-FB53AA627F1B"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.atmel.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="vault_revision" value="4BE95B8B-E1EF-4025-9FFB-95CA84512F43"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521843945"/>
+                                    <attribute name="Datasheet_Version" value="revC, Mar-2009"/>
+                                    <attribute name="release_date" value="1329220623"/>
+                                    <attribute name="Code__JEDEC" value="MS-026-ABA"/>
+                                    <attribute name="MPN" value="ATTINY88-AU"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="32-Lead, 7x7x1.0 mm Body, 0.8mm Lead Pitch, Thin Profile Plastic Quad Flat Package (TQFP)"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="ATtiny48/88 Summary"/>
+                                    <attribute name="MF" value="Microchip / Atmel"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="package" value="32A"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.atmel.com/dyn/resources/prod_documents/8008S.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="MICROCHIP_-_ATMEL_ATTINY88-AU_0_2" package="MICROCHIP_-_ATMEL_ATTINY88-AU_2">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="!PD3!(PCINT19/INT1)"/>
+                                <connect gate="G$0" pad="10" pin="!PD6!(PCINT22/AIN0)"/>
+                                <connect gate="G$0" pad="11" pin="!PD7!(PCINT23/AIN1)"/>
+                                <connect gate="G$0" pad="12" pin="!PB0!(PCINT0/CLKO/ICP1)"/>
+                                <connect gate="G$0" pad="13" pin="!PB1!(PCINT1/OC1A)"/>
+                                <connect gate="G$0" pad="14" pin="!SS!/OC1B)"/>
+                                <connect gate="G$0" pad="15" pin="!PB3!(PCINT3/MOSI)"/>
+                                <connect gate="G$0" pad="16" pin="!PB4!(PCINT4/MISO)"/>
+                                <connect gate="G$0" pad="17" pin="!PB5!(SCK/PCINT5)"/>
+                                <connect gate="G$0" pad="18" pin="AVCC"/>
+                                <connect gate="G$0" pad="19" pin="!PA0!(ADC6/PCINT24)"/>
+                                <connect gate="G$0" pad="2" pin="!PD4!(PCINT20/T0)"/>
+                                <connect gate="G$0" pad="20" pin="!PC7!(PCINT15)"/>
+                                <connect gate="G$0" pad="21" pin="1_GND"/>
+                                <connect gate="G$0" pad="22" pin="!PA1!(ADC7/PCINT25)"/>
+                                <connect gate="G$0" pad="23" pin="!PC0!(ADC0/PCINT8)"/>
+                                <connect gate="G$0" pad="24" pin="!PC1!(ADC1/PCINT9)"/>
+                                <connect gate="G$0" pad="25" pin="!PC2!(ADC2/PCINT10)"/>
+                                <connect gate="G$0" pad="26" pin="!PC3!(ADC3/PCINT11)"/>
+                                <connect gate="G$0" pad="27" pin="!PC4!(ADC4/SDA/PCINT12)"/>
+                                <connect gate="G$0" pad="28" pin="!PC5!(ADC5/SCL/PCINT13)"/>
+                                <connect gate="G$0" pad="29" pin="!RESET!/PCINT14)"/>
+                                <connect gate="G$0" pad="3" pin="!PA2!(PCINT26)"/>
+                                <connect gate="G$0" pad="30" pin="!PD0!(PCINT16)"/>
+                                <connect gate="G$0" pad="31" pin="!PD1!(PCINT17)"/>
+                                <connect gate="G$0" pad="32" pin="!PD2!(INT0/PCINT18)"/>
+                                <connect gate="G$0" pad="4" pin="VCC"/>
+                                <connect gate="G$0" pad="5" pin="2_GND"/>
+                                <connect gate="G$0" pad="6" pin="!PA3!(PCINT27)"/>
+                                <connect gate="G$0" pad="7" pin="!PB6!(PCINT6/CLKI)"/>
+                                <connect gate="G$0" pad="8" pin="!PB7!(PCINT7)"/>
+                                <connect gate="G$0" pad="9" pin="!PD5!(PCINT21/T1)"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Component_Link_2_Description" value="ATtiny48/88 Datasheet"/>
+                                    <attribute name="ciiva_ids" value="1155400"/>
+                                    <attribute name="Component_Link_2_URL" value="http://www.atmel.com/dyn/resources/prod_documents/doc8008.pdf"/>
+                                    <attribute name="Package_Version" value="revC, Oct-2010"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="2DDE0CE0-C8F3-4319-BD7A-FB53AA627F1B"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.atmel.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="vault_revision" value="4BE95B8B-E1EF-4025-9FFB-95CA84512F43"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521843945"/>
+                                    <attribute name="Datasheet_Version" value="revC, Mar-2009"/>
+                                    <attribute name="release_date" value="1329220623"/>
+                                    <attribute name="Code__JEDEC" value="MS-026-ABA"/>
+                                    <attribute name="MPN" value="ATTINY88-AU"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="32-Lead, 7x7x1.0 mm Body, 0.8mm Lead Pitch, Thin Profile Plastic Quad Flat Package (TQFP)"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="ATtiny48/88 Summary"/>
+                                    <attribute name="MF" value="Microchip / Atmel"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="package" value="32A"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.atmel.com/dyn/resources/prod_documents/8008S.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
