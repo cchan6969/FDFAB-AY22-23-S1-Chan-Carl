@@ -24,11 +24,21 @@
         </nav>
         <div><!--article-->
             <p>
+                For the electronics of this project, I have opted to use the ATTINY88, with the ULN2003N Darlington pair to drive a solenoid, at 6VDC and 300mA per solenoid. An external 12V powersupply would pass current into the 5V voltage regulator to run power into 
                 <a href="https://www.allaboutcircuits.com/electronic-components/datasheet/ATTINY88-AU--Microchip/">Attiny88 footprint TQFP</a><br>
+                Initially, I had used auto route to generate the traces, but the traces were too close together and they were not milled very well.<br>
+                Initial board traces:<br>
+                <img src="png cnc/IMG_6838.jpg" width="45%"><br>
+                <hr>
+                After the first attempt, I rewired the whole board by hand on Eagle.<br>
+                I had renumbered the output pins of the ULN2003N and the ATTINY88 pins to be aligned physically. This will ensure a cleaner flow of lines rather than the criss cross lines of the first board.<br>
+                The board schmetics:<br>
+                <img src="final project/png/schmetics.png" width="45%"><br>
+                <img src="final project/png/board placement.png" width="45%"><br>
+
                 <a href="final project/eagle/music bord.brd">Final music board design</a><br>
                 <a href="final project/eagle/music bord.sch">Final music board schmetics</a><br>
-                initial board traces
-                <img src="png cnc/IMG_6838.jpg" width="45%"><br>
+
                 Tapping board onto the machine
                 <img src="png cnc/IMG_6909.jpg" width="45%"><br>
                 Final board traces
