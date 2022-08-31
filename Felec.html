@@ -24,12 +24,23 @@
         </nav>
         <div><!--article-->
             <p>
-                For the electronics of this project, I have opted to use the ATTINY88, with the ULN2003N Darlington pair to drive a solenoid, at 6VDC and 300mA per solenoid. An external 12V powersupply would pass current into the 5V voltage regulator to run power into the chip and the solenoids.<br>                Initially, I had used auto route to generate the traces, but the traces were too close together and they were not milled very well.<br>
-                I had found the footprint for the ATtiny 88 eagle in Snapeda, then importing it into my Eagles library to be used to start wiring.
+                For the electronics of this project, I have opted to use the ATTINY88, with the ULN2003N Darlington pair to drive a solenoid, at 6VDC and 300mA per solenoid. An external 12V powersupply would pass current into the 5V voltage regulator to run power into the chip and the solenoids.<br>                
+                
+                I had found the footprint for the ATtiny 88 eagle in Snapeda, then importing it into my Eagles library to be used to start wiring.<br>
                 <img src="png cnc/88 eagle.png" width="45%"><br>
-                <img src="png cnc/IMG_6838.jpg" width="45%"><br>
+                This is also the same for the uln2003an chip.
+                <img src="png cnc/uln2003an.png" width="45%"><br>
+                Eagle Libraries:
+                <a href="https://www.allaboutcircuits.com/electronic-components/datasheet/ATTINY88-AU--Microchip/">Attiny88 footprint TQFP</a><br>
+                <a href="https://www.snapeda.com/parts/AMS1117-3.3/Advanced%20Monolithic%20Systems/view-part/?welcome=home">AMS1117 foorprint</a><br>
+                <a href="http://drazzy.com/e/eaglelibs.shtml">Dr. Azzy's Eagle Libraries, Pinhead+</a><br>
+            </p>
+            <hr>
+            <p>
                 Initial board traces:<br>
                 <img src="png cnc/IMG_6838.jpg" width="45%"><br>
+                I had used auto route to generate the traces, but the traces were too close together and not milled out, with other imperfection issues, thus I had decided to make another board.<br>
+                There is also a big hole in the board, which is caused by using the wrong program on Mods, with me using the 2d mill instead of the 2d mill PCB, which caused the Gcode cut to be through the board, which was too deep.
             </p>
             <hr>
             <p>
@@ -54,13 +65,6 @@
                 <img src="png cnc/IMG_6974.jpg" width="45%"><br>
                 Soldered wire underboard
                 <img src="png cnc/IMG_6975.jpg" width="45%"><br>
-            </p>
-            <hr>
-            <p>
-                Eagle library
-                <a href="https://www.allaboutcircuits.com/electronic-components/datasheet/ATTINY88-AU--Microchip/">Attiny88 footprint TQFP</a><br>
-                <a href="https://www.snapeda.com/parts/AMS1117-3.3/Advanced%20Monolithic%20Systems/view-part/?welcome=home">AMS1117 foorprint</a><br>
-                <a href="http://drazzy.com/e/eaglelibs.shtml">Dr. Azzy's Eagle Libraries, Pinhead+</a><br>
             </p>
         </div>
     </body>   
