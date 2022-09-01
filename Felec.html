@@ -42,7 +42,9 @@
                 Initial board traces:<br>
                 <img src="png cnc/IMG_6838.jpg" width="45%"><br>
                 I had used auto route to generate the traces, but the traces were too close together and not milled out, with other imperfection issues, thus I had decided to make another board.<br>
-                There is also a big hole in the board, which is caused by using the wrong program on Mods, with me using the 2d mill instead of the 2d mill PCB, which caused the Gcode cut to be through the board, which was too deep.
+                There is also a big hole in the board, which is caused by using the wrong program on Mods, with me using the 2d mill instead of the 2d mill PCB, which caused the Gcode cut to be through the board, which was too deep.<br>
+                Therefore, in the future I would have to check the cut depth before cutting. For the copper layer it is 0.05mm cut depth.<br>
+                <img src="png cnc/traces cut depth mods.png" width="45%"><br>
             </p>
             <hr>
             <p>
@@ -57,8 +59,8 @@
                 <img src="png cnc/IMG_6909.jpg" width="45%"><br>
                 Final board traces
                 <img src="png cnc/IMG_6957.jpg" width="45%"><br>
-                My szing of the holes were wrong, thus resulting in a circle profile cut instead of a drill operation.<br>
-                <img src="png cnc/img_6934" width="45%"><br>
+                My sizing of the holes were wrong, thus resulting in a circle profile cut instead of a drill operation.<br>
+                <img src="png cnc/IMG_6934.jpg" width="45%"><br>
                 Thus we had to use a manual bench drill to create a small hole in the board.
                 <img src="png cnc/IMG_6935.jpg" width="45%"><br>
                 Hot air reflow soldering of chips
@@ -74,14 +76,25 @@
             <p>
                 Some issues I had found was that the ATTINY88 chips I had bought from China were all faulty, thus all were not able to be connected.<br>
                 <img src="png cnc/IMG_6976.jpg" width="45%"><br>
-                Using Avrdude, the chip still did not connect.<br>
+                Using Avrdude to double check the signal sent by the chip, it displays no power and the chip still did not connect.<br>
                 <img src="png cnc/IMG_6977.jpg" width="45%"><br>
+            </p>
+            <hr>
+            <p>
                 Thus I had made a new downscaled board using the ATTINNY1614, focusing on a proof of concept with 3 solenoids. <br>
+                <img src="png cnc/New folder/IMG_7039.png" width="45%"><br>
                 However, the solenoids that I had bought had wrong ratings, using 1.2A current over the labeled 300mA.<br>
                 The ULN2003N chip could only suppport 500mA, so a 1.2A current would not run through it. <br>
                 During the process of testing the board using a DC variable powersupply, I overvolted the board, resulting in frying the ATTINY1614 chip.<br>
-
-
+                <img src="png cnc/New Folder/IMG_7040.jpg" width="45%"><br>
+            </p>
+            <hr>
+            <p>
+                At the end, I have used an Arduino Uno as a proof of concept board.<br>
+                Using a 12v relay to test concept of using relays to run the high current requirment.<br>
+                <img src="png cnc/IMG_7049.jpg" width="45%"><br> 
+                Using 3 5v relays to run into the arduino to run 1.2A current to power the solenoid.<br>
+                <iframe width="560" height="315" src="png cnc/IMG_7053.MOV.mp4" frameborder="0" allowfullscreen muted></iframe><br>
             </p>
         </div>
     </body>   
